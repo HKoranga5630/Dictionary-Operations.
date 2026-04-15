@@ -1,0 +1,35 @@
+# Creating a dictionary
+student = {
+    "name": "Shantanu",
+    "age": 18,
+    "course": "CSE",
+    "city": "Pune"
+}
+
+# Displaying dictionary
+print("Dictionary:", student)
+
+# Accessing value
+print("Accessing Name:", student["name"])
+
+# Adding new key-value pair
+student["marks"] = 90
+print("After Adding:", student)
+
+# Updating value
+student["age"] = 19
+print("After Updating:", student)
+
+# Removing element
+student.pop("city")
+print("After Removing:", student)
+
+# Accessing dictionary using loop
+for key, value in student.items():
+    print(key, ":", value)
+
+# Getting all keys
+print("Keys:", student.keys())
+
+# Getting all values
+print("Values:", student.values())
